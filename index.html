@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze Shadow Renderer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Maze Shadow Renderer</h1>
 
+    <div class="toolbar">
+      <label>
+        Chọn mê cung:
+        <select id="mazeSelect"></select>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" id="shadowToggle" checked />
+        Show Shadows
+      </label>
+
+      <button id="solutionBtn">Show Solution</button>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="mazeCanvas"></canvas>
+    </div>
+
+    <p class="note">
+      Web sẽ đọc ảnh 2D và tự vẽ lại maze bằng code.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
